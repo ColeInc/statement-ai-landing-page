@@ -21,7 +21,7 @@ export default function ProcessSteps() {
       icon: CalendarDays,
       title: "Build",
       description:
-        "We design and build your app with just the essential features, focusing on simplicity and speed, while our expert team follows best practices to deliver rapid, efficient development.",
+        "We design and build your automation with just the essential features, focusing on simplicity and speed, while our expert team follows best practices to deliver rapid, efficient development.",
     },
     {
       icon: Rocket,

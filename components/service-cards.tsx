@@ -7,21 +7,25 @@ export default function ServiceCards() {
   const services = [
     {
       icon: Code,
-      title: "Bespoke App Solutions",
-      description: "Custom software built for your specific needs without unnecessary features or costs.",
+      title: "Content Creation Systems",
+      description: "Automated Long-form Content Systems that keep your brand active and visible while you stay focused on running your business.",
       points: [
-        "Get exactly what your business needs without paying for bloated features you'll never use",
-        "Stop forcing your unique processes into rigid off-the-shelf software that wasn't built for you",
-        "From lean MVPs to full-featured systems, we create custom apps tailored to your goals and your budget."
+        // "Leverage AI to create content tailored to your brand voice and messaging at scale.",
+        "Automate your social media content workflow, freeing up hours so you can focus on strategy and growth.",
+        "Consistent, high-quality content across every platform without spending hours thinking of ideas, writing drafts, or repurposing posts.",
+        "Daily, consistent publishing of SEO-optimized blog posts, long-form newsletters, short-form posts, and YouTube scripts in one streamlined system."
       ],
     },
     {
       icon: Bot,
-      title: "AI Automation",
-      description: "Eliminate repetitive tasks, uncover insights, and create personalized experiences.",
+      title: "Cold Outreach Automation",
+      description: "Cold Outreach Automation Systems that generate highly personalized outreach messages at scale.",
       points: [
-        "Eliminate repetitive, low-value tasks that drain time and morale so your team can focus on work that actually moves your business forward.",
-        "Purpose built automations for your unique business processes. Automating anything from automating lead generation processes to tedious document processing."
+        // "Stand out in crowded inboxes with personalised outreach that feels researched and relevant instead of generic.",
+        // "Reach more leads with highly personalized cold emails created automatically at scale.",
+        "Analyze each lead’s website, messaging, and pain points to craft completely personalised messages that feel handcrafted and highly relevant.",
+        "Fully automate the research, writing, and sending process, eliminating manual work and scaling your lead generation effortlessly.",
+        "Target prospects with messages based on their specific background and context, not generic templates."
       ],
     },
   ]
