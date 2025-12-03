@@ -41,7 +41,7 @@ export default function Home() {
             </h1>
 
             <p className="text-base md:text-lg text-gray-700 max-w-2xl">
-              Embrace AI to revolutionize your customer support, supercharge your lead generation, and automate your workflows. Book a call to discuss a tailor-made strategy that works for you.
+              Leverage AI to transform your content production and outreach workflows, replacing manual effort with streamlined, scalable systems. Book a call to discuss a tailor-made strategy that works for you.
             </p>
 
             <div className="flex gap-4 items-center mt-2">
@@ -75,7 +75,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* How It Works / Process Section */}
+      {/* "Our Process" Section */}
       <section id="how-it-works" className="bg-slate-50 py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="mb-12 text-center">
@@ -85,6 +85,34 @@ export default function Home() {
             </p>
           </div>
           <ProcessSteps />
+        </div>
+      </section>
+
+      {/* Meet the Team */}
+      <section id="meet-the-team" className="py-16 md:py-24">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <div className="mb-12 text-center">
+            <h2 className="text-3xl font-bold tracking-tight md:text-4xl">About the Founder</h2>
+          </div>
+          <div className="flex flex-col md:flex-row items-center gap-8">
+            {/* Profile Picture */}
+            <div className="flex-shrink-0">
+              <div className="w-32 h-32 md:w-40 md:h-40 rounded-[15px] bg-gradient-to-br from-purple-200 to-purple-300 overflow-hidden">
+                {/* Replace with actual team member photo */}
+                {/* <div className="w-full h-full bg-gray-300" /> */}
+                <img src={"/cole-avatar.jpg"} />
+
+              </div>
+            </div>
+
+            {/* Bio */}
+            <div className="flex-1 text-center md:text-left">
+              <h3 className="text-2xl font-semibold mb-4">Cole McConnell</h3>
+              <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+                Cole is a Full-Stack Engineer turned Automation Specialist with a strong track record in building custom automation solutions for clients worldwide. Based in Auckland, he leads Statement.ai and works full time in the automation space, helping businesses streamline complex processes with practical, reliable systems. His background in software engineering gives him a deep understanding of how to design and develop automations that deliver real results.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 

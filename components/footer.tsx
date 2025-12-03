@@ -16,11 +16,10 @@ export default function Footer() {
         <div className="grid gap-8 md:grid-cols-4">
           <div className="md:col-span-2">
             <Link href="/" className="text-xl font-bold">
-              Hyssop Labs
+              STATEMENT.AI
             </Link>
             <p className="mt-4 max-w-md text-sm text-muted-foreground !text-gray-600">
-              Hyssop Labs is a development agency that helps SMBs, agencies, and startups implement AI to
-              generate new revenue, increase profit margins, and save you significant time.
+              Leverage AI to transform your content production and outreach workflows, replacing manual effort with streamlined, scalable systems.
             </p>
             <div className="mt-6 flex space-x-4">
               <div className="space-y-4">
@@ -94,7 +93,7 @@ export default function Footer() {
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Mail className="h-4 w-4" />
                 <a href="mailto:hello@hyssoplabs.com" className="hover:text-foreground text-gray-600">
-                  hello@hyssoplabs.com
+                  hello@statementai.com
                 </a>
               </li>
             </ul>
@@ -108,7 +107,7 @@ export default function Footer() {
 
         <div className="mt-12 border-t pt-8 text-center">
           <p className="text-xs text-muted-foreground text-gray-600">
-            © {new Date().getFullYear()} Hyssop Labs. All rights reserved.
+            © {new Date().getFullYear()} Statement.ai. All rights reserved.
           </p>
         </div>
       </div>
