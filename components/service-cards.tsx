@@ -1,7 +1,4 @@
-import Link from "next/link"
-import { ArrowRight, Bot, Code } from "lucide-react"
-
-import { Button } from "@/components/ui/button"
+import { Bot, Code } from "lucide-react"
 
 export default function ServiceCards() {
   const services = [
@@ -31,43 +28,31 @@ export default function ServiceCards() {
   ]
 
   return (
-    <div className="rounded-2xl border bg-white p-8 shadow-sm">
-      <div className="grid gap-12 md:grid-cols-2 md:gap-8">
-        {services.map((service, index) => (
-          <div key={index} className="space-y-6">
-            {/* Icon */}
-            <div className="h-16 w-16 rounded-lg bg-primary/10 p-4">
-              <service.icon className="h-8 w-8 text-primary" />
-            </div>
-
-            {/* Title */}
-            <h3 className="text-2xl font-bold">{service.title}</h3>
-
-            {/* Short description */}
-            <p className="text-lg text-slate-600 leading-tight">{service.description}</p>
-
-            {/* Bullet points */}
-            <ul className="space-y-3 pt-2">
-              {service.points.map((point, pointIndex) => (
-                <li key={pointIndex} className="flex items-start gap-3 leading-tight">
-                  <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary "></span>
-                  <span className="text-slate-700">{point}</span>
-                </li>
-              ))}
-            </ul>
+    <div className="grid gap-12 md:grid-cols-2 md:gap-8">
+      {services.map((service, index) => (
+        <div key={index} className="rounded-2xl border border-white/5 bg-card/80 backdrop-blur-md p-8 shadow-sm space-y-6">
+          {/* Icon */}
+          <div className="h-16 w-16 rounded-lg bg-primary/10 p-4">
+            <service.icon className="h-8 w-8 text-primary" />
           </div>
-        ))}
-      </div>
 
-      {/* CTA Button */}
-      <div className="mt-10 flex justify-end">
-        <Button asChild className="group">
-          <Link href="#book-call">
-            Schedule a Call
-            <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-          </Link>
-        </Button>
-      </div>
+          {/* Title */}
+          <h3 className="text-2xl font-bold text-foreground">{service.title}</h3>
+
+          {/* Short description */}
+          <p className="text-lg text-muted-foreground leading-tight">{service.description}</p>
+
+          {/* Bullet points */}
+          <ul className="space-y-3 pt-2">
+            {service.points.map((point, pointIndex) => (
+              <li key={pointIndex} className="flex items-start gap-3 leading-tight">
+                <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary"></span>
+                <span className="text-muted-foreground">{point}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
     </div>
   )
 }

@@ -36,20 +36,17 @@ export default function ProcessSteps() {
   return (
     <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
       {steps.map((step, index) => (
-        <Card key={index} className="h-full border-2 transition-all hover:border-primary/50 hover:shadow-md">
+        <Card key={index} className="h-full border-white/5 transition-all hover:border-primary/50 hover:shadow-glow">
           <CardHeader>
             <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-md bg-primary/10">
               <step.icon className="h-6 w-6 text-primary" />
             </div>
-            <CardTitle className="flex items-center gap-2">
-              {/* <span className="flex h-6 w-6 items-center justify-center rounded-full bg-primary text-xs text-primary-foreground">
-                {index + 1}
-              </span> */}
+            <CardTitle className="flex items-center gap-2 text-foreground">
               {step.title}
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <CardDescription className="text-sm text-foreground/80 text-gray-600">{step.description}</CardDescription>
+            <CardDescription className="text-sm text-muted-foreground">{step.description}</CardDescription>
           </CardContent>
         </Card>
       ))}

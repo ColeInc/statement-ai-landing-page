@@ -2,63 +2,60 @@ import { Mail, Twitter, Linkedin } from "lucide-react"
 import Link from "next/link"
 
 import { Button } from "@/components/ui/button"
+import { Card } from "@/components/ui/card"
+import { BorderBeam } from "@/components/magicui/border-beam"
+import { inter } from "@/lib/fonts"
 
 export default function Footer() {
   const TWITTER_URL = 'https://twitter.com/cole_mccon'
   const GITHUB_URL = 'https://github.com/coleinc'
   // const LINKEDIN_URL = 'https://www.linkedin.com/in/cole-mcconnell/'
   const LINKEDIN_URL = 'https://www.linkedin.com/company/hyssop-labs'
-  const EMAIL_URL = 'mailto:hello@hyssoplabs.com'
+  const EMAIL_URL = 'mailto:hello@statementai.com'
 
   return (
-    <footer id="contact" className="border-t bg-slate-50">
+    <footer id="contact" className="border-t border-white/5 bg-background">
       <div className="container mx-auto px-4 py-12">
         <div className="grid gap-8 md:grid-cols-4">
           <div className="md:col-span-2">
-            <Link href="/" className="text-xl font-bold">
-              STATEMENT.AI
+            <Link href="/" className="flex items-center space-x-2">
+              <div className="relative w-[11px] h-[11px] rounded-full overflow-hidden">
+                <div className="absolute inset-0 animate-gradient-flow bg-gradient-to-br from-[#BFE2E4] via-[#9fd5d8] to-[#7ec8cc] opacity-90" />
+                <div className="absolute inset-0 animate-gradient-pulse bg-gradient-to-tr from-[#d4f0f1] via-[#BFE2E4] to-[#a8dde0] mix-blend-screen" />
+              </div>
+              <span className={`text-xl font-bold text-primary ${inter.className}`}>statement.ai</span>
             </Link>
-            <p className="mt-4 max-w-md text-sm text-muted-foreground !text-gray-600">
+            <p className="mt-4 max-w-md text-sm text-muted-foreground">
               Leverage AI to transform your content production and outreach workflows, replacing manual effort with streamlined, scalable systems.
             </p>
             <div className="mt-6 flex space-x-4">
               <div className="space-y-4">
-                {/* <h3 className="text-lg font-semibold">Connect with me</h3> */}
                 <div className="flex gap-2">
                   <Link href={TWITTER_URL} target="_blank">
                     <Button
                       variant="outline"
                       size="icon"
-                      className="bg-transparent hover:bg-zinc-300 border-gray-500 transition-colors"
+                      className="hover:border-primary/50 hover:bg-primary/10"
                     >
-                      <Twitter className="w-4 h-4 text-zinc-900 hover:text-white transition-colors" />
+                      <Twitter className="w-4 h-4 text-foreground transition-colors" />
                     </Button>
                   </Link>
                   <Link href={LINKEDIN_URL} target="_blank">
                     <Button
                       variant="outline"
                       size="icon"
-                      className="bg-transparent hover:bg-zinc-300 border-gray-500 transition-colors"
+                      className="hover:border-primary/50 hover:bg-primary/10"
                     >
-                      <Linkedin className="w-4 h-4 text-zinc-900 hover:text-white transition-colors" />
+                      <Linkedin className="w-4 h-4 text-foreground transition-colors" />
                     </Button>
                   </Link>
-                  {/* <Link href={GITHUB_URL} target="_blank">
-                    <Button
-                      variant="outline"
-                      size="icon"
-                      className="bg-transparent hover:bg-zinc-300 border-gray-500 transition-colors"
-                    >
-                      <Github className="w-4 h-4 text-zinc-900 hover:text-white transition-colors" />
-                    </Button>
-                  </Link> */}
                   <Link href={EMAIL_URL}>
                     <Button
                       variant="outline"
                       size="icon"
-                      className="bg-transparent hover:bg-zinc-300 border-gray-500 transition-colors"
+                      className="hover:border-primary/50 hover:bg-primary/10"
                     >
-                      <Mail className="w-4 h-4 text-zinc-900 hover:text-white transition-colors" />
+                      <Mail className="w-4 h-4 text-foreground transition-colors" />
                     </Button>
                   </Link>
                 </div>
@@ -67,46 +64,31 @@ export default function Footer() {
           </div>
 
           <div>
-            {/* <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider">Services</h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link href="#" className="text-muted-foreground hover:text-foreground">
-                  AI Automation
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-muted-foreground hover:text-foreground">
-                  Bespoke App Solutions
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-muted-foreground hover:text-foreground">
-                  Consulting
-                </Link>
-              </li>
-            </ul> */}
           </div>
 
           <div>
-            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider">Contact</h3>
+            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-foreground">Contact</h3>
             <ul className="space-y-2 text-sm">
               <li className="flex items-center gap-2 text-muted-foreground">
-                <Mail className="h-4 w-4" />
-                <a href="mailto:hello@hyssoplabs.com" className="hover:text-foreground text-gray-600">
+                <Mail className="h-4 w-4 text-primary" />
+                <a href="mailto:hello@hyssoplabs.com" className="hover:text-primary transition-colors">
                   hello@statementai.com
                 </a>
               </li>
             </ul>
             <div className="mt-6">
-              <Button asChild>
-                <Link href="#book-call">Book a Call</Link>
-              </Button>
+              <Card className="relative w-fit">
+                <Button asChild className="relative overflow-hidden w-[160px]" variant={"outline"}>
+                  <Link href="#book-call">Book a Call</Link>
+                </Button>
+                <BorderBeam size={100} duration={8} colorFrom="#BFE2E4" colorTo="#9fd5d8" />
+              </Card>
             </div>
           </div>
         </div>
 
-        <div className="mt-12 border-t pt-8 text-center">
-          <p className="text-xs text-muted-foreground text-gray-600">
+        <div className="mt-12 border-t border-white/5 pt-8 text-center">
+          <p className="text-xs text-muted-foreground">
             © {new Date().getFullYear()} Statement.ai. All rights reserved.
           </p>
         </div>
