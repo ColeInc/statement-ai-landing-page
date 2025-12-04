@@ -22,7 +22,7 @@ export default function Navbar() {
               <div className="absolute inset-0 animate-gradient-flow bg-gradient-to-br from-[#BFE2E4] via-[#9fd5d8] to-[#7ec8cc] opacity-90" />
               <div className="absolute inset-0 animate-gradient-pulse bg-gradient-to-tr from-[#d4f0f1] via-[#BFE2E4] to-[#a8dde0] mix-blend-screen" />
             </div>
-            <span className={`text-xl font-bold text-primary ${inter.className}`}>statement.ai</span>
+            <span className={`text-xl font-bold text-primary ${inter.className}`}>overleaf.ai</span>
           </Link>
         </div>
 

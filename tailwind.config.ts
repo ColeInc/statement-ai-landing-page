@@ -54,7 +54,7 @@ const config = {
           foreground: "hsl(var(--card-foreground))",
         },
         teal: {
-          DEFAULT: "#BFE2E4",
+          DEFAULT: "#    ",
           50: "rgba(191, 226, 228, 0.05)",
           100: "rgba(191, 226, 228, 0.1)",
           150: "rgba(191, 226, 228, 0.15)",

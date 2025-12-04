@@ -4,8 +4,8 @@ import { inter } from "@/lib/fonts"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Hyssop Labs - AI Automation and Automation",
-  description: "Hyssop Labs helps SMBs, agencies, and startups generate new revenue, automate tedious processes, and save amounts of significant time with Automation and AI.",
+  title: "overleaf.ai - Automate your Content Production and Cold Outreach.",
+  description: "Leverage AI to transform your content production and outreach workflows, replacing manual effort with completely automated, scalable systems.",
   icons: {
     icon: '/favicon.ico',
   },

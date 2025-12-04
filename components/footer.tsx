@@ -10,8 +10,8 @@ export default function Footer() {
   const TWITTER_URL = 'https://twitter.com/cole_mccon'
   const GITHUB_URL = 'https://github.com/coleinc'
   // const LINKEDIN_URL = 'https://www.linkedin.com/in/cole-mcconnell/'
-  const LINKEDIN_URL = 'https://www.linkedin.com/company/hyssop-labs'
-  const EMAIL_URL = 'mailto:hello@statementai.com'
+  const LINKEDIN_URL = 'https://www.linkedin.com/company/overleaf-ai'
+  const EMAIL_URL = 'mailto:hello@overleaf.agency'
 
   return (
     <footer id="contact" className="border-t border-white/5 bg-background">
@@ -23,10 +23,10 @@ export default function Footer() {
                 <div className="absolute inset-0 animate-gradient-flow bg-gradient-to-br from-[#BFE2E4] via-[#9fd5d8] to-[#7ec8cc] opacity-90" />
                 <div className="absolute inset-0 animate-gradient-pulse bg-gradient-to-tr from-[#d4f0f1] via-[#BFE2E4] to-[#a8dde0] mix-blend-screen" />
               </div>
-              <span className={`text-xl font-bold text-primary ${inter.className}`}>statement.ai</span>
+              <span className={`text-xl font-bold text-primary ${inter.className}`}>overleaf.ai</span>
             </Link>
             <p className="mt-4 max-w-md text-sm text-muted-foreground">
-              Leverage AI to transform your content production and outreach workflows, replacing manual effort with streamlined, scalable systems.
+              Leverage AI to transform your content production and outreach workflows, replacing manual effort with fully automated, scalable systems.
             </p>
             <div className="mt-6 flex space-x-4">
               <div className="space-y-4">
@@ -72,7 +72,7 @@ export default function Footer() {
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Mail className="h-4 w-4 text-primary" />
                 <a href="mailto:hello@hyssoplabs.com" className="hover:text-primary transition-colors">
-                  hello@statementai.com
+                  hello@overleaf.agency
                 </a>
               </li>
             </ul>
@@ -89,7 +89,7 @@ export default function Footer() {
 
         <div className="mt-12 border-t border-white/5 pt-8 text-center">
           <p className="text-xs text-muted-foreground">
-            © {new Date().getFullYear()} Statement.ai. All rights reserved.
+            © {new Date().getFullYear()} OVERLEAF.AI. All rights reserved.
           </p>
         </div>
       </div>

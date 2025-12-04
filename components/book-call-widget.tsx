@@ -62,7 +62,7 @@ export default function BookCallWidget() {
       </div> */}
       <div
         className="calendly-inline-widget h-[700px] w-full"
-        data-url="https://calendly.com/hyssoplabs/30min"
+        data-url="https://calendly.com/overleafai/30min"
       ></div>
     </div>
   )

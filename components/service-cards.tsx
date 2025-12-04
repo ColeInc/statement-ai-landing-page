@@ -40,14 +40,14 @@ export default function ServiceCards() {
           <h3 className="text-2xl font-bold text-foreground">{service.title}</h3>
 
           {/* Short description */}
-          <p className="text-lg text-muted-foreground leading-tight">{service.description}</p>
+          <p className="text-lg text-[#bcbcbc] leading-tight">{service.description}</p>
 
           {/* Bullet points */}
           <ul className="space-y-3 pt-2">
             {service.points.map((point, pointIndex) => (
-              <li key={pointIndex} className="flex items-start gap-3 leading-tight">
+              <li key={pointIndex} className="flex items-start gap-3 leading-tight ">
                 <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary"></span>
-                <span className="text-muted-foreground">{point}</span>
+                <span className="text-muted-foreground text-[#bcbcbc]">{point}</span>
               </li>
             ))}
           </ul>

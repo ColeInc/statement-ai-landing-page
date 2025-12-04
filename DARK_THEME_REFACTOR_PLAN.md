@@ -1,5 +1,5 @@
 # Dark Theme Refactoring Plan
-## Statement.ai Landing Page - UI Transformation
+## Overleaf.ai Landing Page - UI Transformation
 
 **Date Created:** 2025-12-03
 **Current Status:** Planning Phase
@@ -9,7 +9,7 @@
 
 ## 📋 Executive Summary
 
-Transform the Statement.ai landing page from a light theme with purple accents to a premium dark theme with teal/mint green accents, following modern SaaS design patterns inspired by Nebula AI.
+Transform the Overleaf.ai landing page from a light theme with purple accents to a premium dark theme with teal/mint green accents, following modern SaaS design patterns inspired by Nebula AI.
 
 ### Key Changes
 - **Background:** White → Deep black (#0a0a0a)

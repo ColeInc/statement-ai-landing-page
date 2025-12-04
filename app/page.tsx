@@ -36,7 +36,7 @@ export default function Home() {
           </h1>
 
           <p className="text-base md:text-lg text-muted-foreground max-w-2xl !text-[#bcbcbc]">
-            Leverage AI to transform your content production and outreach workflows, replacing manual effort with streamlined, scalable systems. Book a call to discuss a tailor-made strategy that works for you.
+            Leverage AI to transform your content production and outreach workflows, replacing manual effort with completely automated, scalable systems. Book a call to discuss a tailor-made strategy that works for you.
           </p>
 
           <div className="flex gap-4 items-center mt-2">
@@ -114,7 +114,7 @@ export default function Home() {
 
             {/* Bio in second column, second row */}
             <p className="!text-[18px] !leading-[24px] md:text-lg text-muted-foreground text-center md:text-left">
-              Cole is a Full-Stack Engineer turned Automation Specialist with a strong track record in building custom automation solutions for clients worldwide. Based in Auckland, he leads Statement.ai and works full time in the automation space, helping businesses streamline complex processes with practical, reliable systems. His background in software engineering gives him a deep understanding of how to design and develop automations that deliver real results.
+              Cole is a Full-Stack Engineer turned Automation Specialist with a strong track record in building custom automation solutions for clients worldwide. Based in Auckland, he leads Overleaf.ai and works full time in the automation space, helping businesses streamline complex processes with practical, reliable systems. His background in software engineering gives him a deep understanding of how to design and develop automations that deliver real results.
             </p>
           </div>
         </div>
