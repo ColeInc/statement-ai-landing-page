@@ -63,7 +63,7 @@ export default function Home() {
           </div>
           <ServiceCards />
           {/* CTA Button */}
-          <div className="mt-10 flex justify-end">
+          <div className="mt-5 flex justify-end">
             <Card className="relative">
               <Button asChild className="relative overflow-hidden w-[160px]" variant={"outline"} size="lg">
                 <Link href="#book-call" className="flex items-center gap-2">
@@ -98,21 +98,24 @@ export default function Home() {
           <div className="mb-12 text-center">
             <h2 className="text-3xl font-bold tracking-tight md:text-4xl text-foreground">About the Founder</h2>
           </div>
-          <div className="flex flex-col md:flex-row items-center gap-8">
-            {/* Profile Picture */}
-            <div className="flex-shrink-0">
-              <div className="w-24 h-24 md:w-32 md:h-32 rounded-[15px] bg-gradient-to-br from-teal/20 to-accent/20 overflow-hidden border border-white/5">
+          <div className="grid md:grid-cols-[auto_1fr] gap-x-8 gap-y-4 items-start">
+            {/* Empty space in first column, first row on desktop */}
+            <div className="hidden md:block"></div>
+
+            {/* Heading in second column, first row */}
+            <h3 className="text-2xl font-semibold text-foreground text-center md:text-left">Cole McConnell</h3>
+
+            {/* Profile Picture in first column, second row */}
+            <div className="flex-shrink-0 mx-auto md:mx-0">
+              <div className="w-28 h-28 rounded-[15px] bg-gradient-to-br from-teal/20 to-accent/20 overflow-hidden border border-white/5">
                 <img src={"/cole-avatar.jpg"} />
               </div>
             </div>
 
-            {/* Bio */}
-            <div className="flex-1 text-center md:text-left">
-              <h3 className="text-2xl font-semibold mb-4 text-foreground">Cole McConnell</h3>
-              <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                Cole is a Full-Stack Engineer turned Automation Specialist with a strong track record in building custom automation solutions for clients worldwide. Based in Auckland, he leads Statement.ai and works full time in the automation space, helping businesses streamline complex processes with practical, reliable systems. His background in software engineering gives him a deep understanding of how to design and develop automations that deliver real results.
-              </p>
-            </div>
+            {/* Bio in second column, second row */}
+            <p className="!text-[18px] !leading-[24px] md:text-lg text-muted-foreground text-center md:text-left">
+              Cole is a Full-Stack Engineer turned Automation Specialist with a strong track record in building custom automation solutions for clients worldwide. Based in Auckland, he leads Statement.ai and works full time in the automation space, helping businesses streamline complex processes with practical, reliable systems. His background in software engineering gives him a deep understanding of how to design and develop automations that deliver real results.
+            </p>
           </div>
         </div>
       </section>
