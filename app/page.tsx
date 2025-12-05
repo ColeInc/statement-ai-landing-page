@@ -1,20 +1,26 @@
 
+"use client"
+
+import { useState } from "react"
 import BookCallWidget from "@/components/book-call-widget"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import ProcessSteps from "@/components/process-steps"
 import ServiceCards from "@/components/service-cards"
 import AnimatedText from "@/components/animated-text"
+import ContactFormModal from "@/components/contact-form-modal"
 import { Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { BorderBeam } from "@/components/magicui/border-beam"
-import Link from "next/link"
 
 export default function Home() {
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false)
+
   return (
     <div className="flex min-h-screen flex-col">
       <Navbar />
+      <ContactFormModal open={isContactModalOpen} onOpenChange={setIsContactModalOpen} />
 
       {/* Hero Section */}
       <section className="relative container mx-auto px-4 py-16 md:py-24 max-w-6xl min-h-[calc(100vh-4rem)] flex items-center">
@@ -41,13 +47,18 @@ export default function Home() {
 
           <div className="flex gap-4 items-center mt-2">
             <Card className="relative">
-              <Button asChild className="relative overflow-hidden w-[160px]" variant={"outline"} size="lg">
-                <Link href="#book-call" className="flex items-center gap-2">
+              <Button
+                onClick={() => setIsContactModalOpen(true)}
+                className="relative overflow-hidden w-[160px]"
+                variant={"outline"}
+                size="lg"
+              >
+                <span className="flex items-center gap-2">
                   Let&apos;s talk
                   <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center">
                     <Phone className="h-4 w-4 text-primary" />
                   </div>
-                </Link>
+                </span>
               </Button>
               <BorderBeam size={100} duration={8} colorFrom="#BFE2E4" colorTo="#9fd5d8" />
             </Card>
@@ -65,13 +76,18 @@ export default function Home() {
           {/* CTA Button */}
           <div className="mt-5 flex justify-end">
             <Card className="relative">
-              <Button asChild className="relative overflow-hidden w-[160px]" variant={"outline"} size="lg">
-                <Link href="#book-call" className="flex items-center gap-2">
+              <Button
+                onClick={() => setIsContactModalOpen(true)}
+                className="relative overflow-hidden w-[160px]"
+                variant={"outline"}
+                size="lg"
+              >
+                <span className="flex items-center gap-2">
                   Let&apos;s talk
                   <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center">
                     <Phone className="h-4 w-4 text-primary" />
                   </div>
-                </Link>
+                </span>
               </Button>
               <BorderBeam size={100} duration={8} colorFrom="#BFE2E4" colorTo="#9fd5d8" />
             </Card>

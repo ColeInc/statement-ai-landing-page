@@ -113,7 +113,7 @@ export default function Navbar() {
             Services
           </Link>
           <Link
-            href="#contact"
+            href="#book-call"
             className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
             onClick={() => setIsMenuOpen(false)}
           >

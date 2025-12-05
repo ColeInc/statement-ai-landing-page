@@ -1,12 +1,17 @@
+"use client"
+
+import { useState } from "react"
 import { Mail, Twitter, Linkedin } from "lucide-react"
 import Link from "next/link"
 
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { BorderBeam } from "@/components/magicui/border-beam"
+import ContactFormModal from "@/components/contact-form-modal"
 import { inter } from "@/lib/fonts"
 
 export default function Footer() {
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false)
   const TWITTER_URL = 'https://twitter.com/cole_mccon'
   const GITHUB_URL = 'https://github.com/coleinc'
   // const LINKEDIN_URL = 'https://www.linkedin.com/in/cole-mcconnell/'
@@ -15,6 +20,7 @@ export default function Footer() {
 
   return (
     <footer id="contact" className="border-t border-white/5 bg-background">
+      <ContactFormModal open={isContactModalOpen} onOpenChange={setIsContactModalOpen} />
       <div className="container mx-auto px-4 py-12">
         <div className="grid gap-8 md:grid-cols-4">
           <div className="md:col-span-2">
@@ -78,8 +84,12 @@ export default function Footer() {
             </ul>
             <div className="mt-6">
               <Card className="relative w-fit">
-                <Button asChild className="relative overflow-hidden w-[160px]" variant={"outline"}>
-                  <Link href="#book-call">Book a Call</Link>
+                <Button
+                  onClick={() => setIsContactModalOpen(true)}
+                  className="relative overflow-hidden w-[160px]"
+                  variant={"outline"}
+                >
+                  Book a Call
                 </Button>
                 <BorderBeam size={100} duration={8} colorFrom="#BFE2E4" colorTo="#9fd5d8" />
               </Card>
